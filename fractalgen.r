@@ -4,14 +4,14 @@
 # These are the parameters for the fractal. 
 # Edit them to make different fractals.
 
-n_vertices <- 6        # attractor vertices - changes symmetry. 3 makes triangular symmetry. 5 makes pentagonal symmetry.
-dist_frac <- 3/5      # attraction distance - changes the shape of the fractal. x/2 works well with odd vertices, x/5 works well with even vertices.
+n_vertices <- 6      # attractor vertices - changes symmetry. 3 makes triangular symmetry. 5 makes pentagonal symmetry.
+dist_frac <- 3/5     # attraction distance - changes the shape of the fractal. x/2 works well with odd vertices, x/5 works well with even vertices.
 scaling <- 1         # zoom in or zoom out on the fractal
-dotcol <- "orange"        # color of the fractal
-bgcol <- "brown"    # color of the background
-dotscale <- 0.4         # size of dots that are used to draw the fractal. 
-iters <- 20000          # number of dots to draw. more dots take more time.
-ncores <- 4				# number of cores for parallelization. doesn't actually speed anything up since drawing the fractal is rate-limiting.
+dotcol <- "orange"   # color of the fractal
+bgcol <- "brown"     # color of the background
+dotscale <- 0.4      # size of dots that are used to draw the fractal. 
+iters <- 20000       # number of dots to draw. more dots take more time.
+ncores <- 4          # number of cores for parallelization. doesn't actually speed anything up since drawing the fractal is rate-limiting.
 
 point_between <- function(x0, y0, x1, y1, frac){
 	dx <- x1 - x0
